@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
-body {
-   background-color:yellow;
+#mood-question {
+   background-color:#E4B3B6;
+   height: 100vh;
+   width: 100%;
+}
+
+.mood-question-text{ 
+    color: #204482;
+    font-family: 'unbounded', sans-serif;
+}
+
+.hidden1 {
+    display: none;
+}
+
+#mood-biter {
+    background-color:#204482;
+    height: 100vh;
+    width: 100%;
+ }
+
+.mood-biter-text{ 
+    color: #E4B3B6;
+    font-family: 'unbounded', sans-serif;
 }

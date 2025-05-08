@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&display=swap" rel="stylesheet">
     <title>MoodBite</title>
 </head>
 <body>
     <header>
-        <img src="img/Logo.svg" alt="MoodBite Logo" class="logo">
-        </header>
+    
+    </header>
     <main>
-        <h1>What's your mood like today?</h1>
-        <button>Happy</button>
-        <button>Sad</button>
-        <button>Anxious</button>
-        <button>Bored</button>
-        <img src="img/emoji.png" alt="Emoji" class="Face">
+        <section id="mood-question" class="hidden1" class="mood-question-container">
+            <img src="img/Group 4.svg" alt="MoodBite Logo" class="logo">
+            <h1 class="mood-question-text">What's your mood like today?</h1>
+            <button class="button-mood-question">Happy</button>
+            <button class="button-mood-question">Sad</button>
+            <button class="button-mood-question">Anxious</button>
+            <button class="button-mood-question">Bored</button>
+            <img src="img/Asset 1.svg" alt="Emoji" class="Face">
+        </section>
+        <section id= "mood-biter" class="hidden" class="mood-biter-container">
+            <h1 class="mood-biter-text">What mood would you like to bite into?</h1>
+            <button class="button-mood-biter">Silly</button>
+            <button class="button-mood-biter">Brainrot</button>
+            <img src="img/pink.svg" alt="Emoji" class="Face">
+        </section>
     </main>
     <script type="module" src="js/script.js"></script>
 </body>
