@@ -80,4 +80,27 @@ button_positive.addEventListener('click', function () {
     selection_moodbiter.classList.add('hidden');
 });
 
+const div_brainrot = document.querySelector('.mood-brainrot-text-container');
 
+document.querySelector('.mood-brainrot-text').innerHTML = dataBrainrot.text;
+
+const brainrot_button_next = document.querySelector('.mood-brainrot-button');
+const brainrot_text = document.querySelector('.mood-brainrot-text');
+
+brainrot_button_next.addEventListener('click', function () {
+
+});
+
+const loadNewFact = () => {
+    fetch('https://uselessfacts.jsph.pl/api/v2/facts/random?language=en')
+        .then(response => response.json())
+        .then(data => {
+            textElement.innerHTML = data.text;
+        })
+        .catch(error => {
+            console.error('Fehler beim Laden des Fun Facts:', error);
+            textElement.innerHTML = "Oops, konnte keinen neuen Fakt laden.";
+        });
+};
+loadNewFact();
+brainrot_button_next.addEventListener('click', loadNewFact);
