@@ -24,3 +24,25 @@ async function loadBrainrot() {
 const dataBrainrot = await loadBrainrot();
 console.log(dataBrainrot); // gibt die Daten der API oder false in der Konsole aus
 
+const button_happy = document.querySelector('#happy');
+const button_sad = document.querySelector('#sad');
+const button_anxious = document.querySelector('#anxious');
+const button_bored = document.querySelector('#bored');
+const button_next = document.querySelector('#next-mood-biter');
+
+button_happy.addEventListener('click', function () {
+    button_next.classList.remove('hidden');
+});
+
+button_sad.addEventListener('click', function () {
+    button_next.classList.remove('hidden');
+});
+
+button_anxious.addEventListener('click', function () {
+    button_next.classList.remove('hidden');
+});
+
+button_bored.addEventListener('click', function () {
+    button_next.classList.remove('hidden');
+});
+

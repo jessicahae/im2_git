@@ -15,8 +15,7 @@
     font-family: 'unbounded', sans-serif;
 }
 
-.hidden, 
-.hidden1 {
+.hidden {
     display: none;
 }
 
@@ -37,11 +36,27 @@
     width: 100%;
 }
 
-.mood-brainrot-article{
-    background-color: white;
-}
+.greenbackground{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
 
 .mood-brainrot-text{ 
     color: black;
     font-family: 'unbounded', sans-serif;
+}
+
+.mood-brainrot-article{
+    position:relative;
+    text-align: center;
+}
+.mood-brainrot-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 70px;
+    border-radius: 10px;
 }
