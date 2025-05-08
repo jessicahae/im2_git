@@ -18,17 +18,30 @@
             <button id="sad" class="button-mood-question">Sad</button>
             <button id="anxious" class="button-mood-question">Anxious</button>
             <button id="bored" class="button-mood-question">Bored</button>
-            <button id="next-mood-biter" class="button-mood-question">next</button>
-            <img src="img/Asset 1.svg" alt="Emoji" class="Face">
+            <button id="next-mood-biter" class="hidden">next</button>
+            <img src="img/Asset 1.svg" alt="Emoji" class="face">
         </section>
-        <section id= "mood-biter" class="hidden" class="mood-biter-container">
+        <section id= "mood-biter" class="hidden mood-biter-container">
             <img src="img/Logo_Pink.svg" alt="MoodBite Logo" class="logo">
             <h1 class="mood-biter-text">What mood would you like to bite into?</h1>
-            <button class="button-mood-biter">Silly</button>
-            <button class="button-mood-biter">Brainrot</button>
-            <img src="img/pink.svg" alt="Emoji" class="Face">
+            <button id="silly" class="button-mood-biter">Silly</button>
+            <button id="brainrot" class="button-mood-biter">Brainrot</button>
+            <button id="positive" class="button-mood-biter">Positive</button>
+            <img src="img/pink.svg" alt="Emoji" class="face">
         </section>
-        <section id= "mood-brainrot" class="hidden" class="mood-brainrot-container">
+        <section id= "mood-silly" class="hidden mood-silly-container">
+            <img src="img/Logo_Green.svg" alt="MoodBite Logo" class="logo">
+            <button class="button-imdone">I'm done!</button>
+            <button class="button-changemood">Change mood</button>
+            <article class= "mood-silly-article">
+                <img src="img/Background_Green.svg" alt="Brainrot" class="greenbackground">
+                <div class="mood-silly-text-container"> 
+                    <h2 class="mood-silly-text">Silly</h2>
+                </div>
+                <button class="mood-silly-button">next</button>
+            </article>
+        </section>
+        <section id= "mood-brainrot" class="hidden mood-brainrot-container">
             <img src="img/Logo_Green.svg" alt="MoodBite Logo" class="logo">
             <button class="button-imdone">I'm done!</button>
             <button class="button-changemood">Change mood</button>
@@ -38,6 +51,18 @@
                     <h2 class="mood-brainrot-text">Brainrot</h2>
                 </div>
                 <button class="mood-brainrot-button">next</button>
+            </article>
+        </section>
+        <section id= "mood-positive" class="hidden mood-positive-container">
+            <img src="img/Logo_Green.svg" alt="MoodBite Logo" class="logo">
+            <button class="button-imdone">I'm done!</button>
+            <button class="button-changemood">Change mood</button>
+            <article class= "mood-positive-article">
+                <img src="img/Background_Green.svg" alt="Brainrot" class="greenbackground">
+                <div class="mood-positive-text-container"> 
+                    <h2 class="mood-positive-text">Positive</h2>
+                </div>
+                <button class="mood-positive-button">next</button>
             </article>
         </section>
     </main>
