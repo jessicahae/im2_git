@@ -12,7 +12,44 @@
 
 .mood-question-text{ 
     color: #204482;
+    font-size: 40px;
     font-family: 'unbounded', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    margin-top: 40px;
+}
+
+.button-container-mood{
+    display: flex;
+    justify-content: center;
+    gap: 15px;        
+    margin: 30px; 
+}
+    
+
+.button-mood-question{
+    font-size: 22px;
+    font-family: 'unbounded', sans-serif;
+    color: #E4B3B6;
+    background-color:#204482;
+    width: 150px;
+    padding:10px;
+    box-sizing: border-box;
+    border:1px solid #204482;
+    border-radius: 10px;
+}
+
+.mood-question-container{
+    position:relative;
+}
+
+.face {
+    width: 440px;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%); /* zentriert horizontal */
+    bottom:-80px;
 }
 
 .hidden {
@@ -60,3 +97,9 @@
     padding: 70px;
     border-radius: 10px;
 }
+
+.logo{
+    position: relative;
+    left: -20px;
+    top: 10px;
+} 
