@@ -95,11 +95,11 @@ const loadNewFact = () => {
     fetch('https://uselessfacts.jsph.pl/api/v2/facts/random?language=en')
         .then(response => response.json())
         .then(data => {
-            textElement.innerHTML = data.text;
+            brainrot_text.innerHTML = data.text; 
         })
         .catch(error => {
             console.error('Fehler beim Laden des Fun Facts:', error);
-            textElement.innerHTML = "Oops, konnte keinen neuen Fakt laden.";
+           brainrot_text.innerHTML = "Oops, konnte keinen neuen Fakt laden.";
         });
 };
 loadNewFact();
