@@ -84,7 +84,7 @@ const div_brainrot = document.querySelector('.mood-brainrot-text-container');
 
 document.querySelector('.mood-brainrot-text').innerHTML = dataBrainrot.text;
 
-const brainrot_button_next = document.querySelector('.mood-brainrot-button');
+const brainrot_button_next = document.querySelector('#mood-brainrot-button');
 const brainrot_text = document.querySelector('.mood-brainrot-text');
 
 brainrot_button_next.addEventListener('click', function () {
