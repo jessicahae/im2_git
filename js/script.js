@@ -104,3 +104,32 @@ const loadNewFact = () => {
 };
 loadNewFact();
 brainrot_button_next.addEventListener('click', loadNewFact);
+
+const allLogos = document.querySelectorAll('.logo');
+
+allLogos.forEach(logo => {
+
+    logo.addEventListener('click', () => {
+        // Alle Sections ausblenden
+        document.querySelectorAll('.mood-logo').forEach(section => {
+            section.classList.add('hidden');
+        });
+
+        // Nur die erste Seite anzeigen
+        const moodQuestionSection = document.querySelector('#mood-question');
+        moodQuestionSection.classList.remove('hidden');
+    });
+});
+
+const imDoneButton = document.querySelector('.button-imdone');
+
+    imDoneButton.addEventListener('click', () => {
+        // Alle Sections ausblenden
+        document.querySelectorAll('.mood-logo').forEach(section => {
+            section.classList.add('hidden');
+        });
+
+        // Nur die erste Seite anzeigen
+        const moodQuestionSection = document.querySelector('#mood-question');
+        moodQuestionSection.classList.remove('hidden');
+        });
