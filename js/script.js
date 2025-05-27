@@ -24,6 +24,19 @@ async function loadBrainrot() {
 const dataBrainrot = await loadBrainrot();
 console.log(dataBrainrot); // gibt die Daten der API oder false in der Konsole aus
 
+async function loadPositive() {
+    const url = 'https://gomezmig03.github.io/MotivationalAPI/en.json'; // mit korrekter API-URL ersetzen
+    try {
+        const response = await fetch(url);
+        return await response.json();
+    } catch (error) {
+        console.error(error);
+        return false;
+    }
+}
+const dataPositive = await loadBrainrot();
+console.log(dataPositive); // gibt die Daten der API oder false in der Konsole aus
+
 const button_happy = document.querySelector('#happy');
 const button_sad = document.querySelector('#sad');
 const button_anxious = document.querySelector('#anxious');
