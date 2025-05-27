@@ -199,7 +199,6 @@ img.button-icon {
 .greenbackground{
     width:100%;
     height:auto;
-    /* display:block; */
     position:absolute;
     top:40px;
     left:0;
@@ -317,7 +316,9 @@ img.button-icon {
     border-radius: 10px;
 }
 
-.mood-finish-container{
-    background-color:#204482;
+#mood-finish{
+    background-color: #204482;
+    height: 100vh;
+    width: 100%;
 }
 

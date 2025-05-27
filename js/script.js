@@ -110,34 +110,77 @@ const allLogos = document.querySelectorAll('.logo');
 allLogos.forEach(logo => {
 
     logo.addEventListener('click', () => {
-        // Alle Sections ausblenden
-        document.querySelectorAll('.mood-logo').forEach(section => {
-            section.classList.add('hidden');
-        });
+        window.location.reload();
 
-        document.querySelectorAll('#mood-finish').forEach(section => {
-            section.classList.add('hidden');
-        });
 
-        // Nur die erste Seite anzeigen
-        const moodQuestionSection = document.querySelector('#mood-question');
-        moodQuestionSection.classList.remove('hidden');
     });
 });
 
-const imDoneButton = document.querySelector('.button-imdone');
+const imDoneButtons = document.querySelectorAll('.button-imdone');
 
-    imDoneButton.addEventListener('click', () => {
+imDoneButtons.forEach(button => {
+    button.addEventListener('click', () => {
         // Alle Sections ausblenden
         document.querySelectorAll('.mood-logo').forEach(section => {
             section.classList.add('hidden');
         });
 
         document.querySelectorAll('#mood-question').forEach(section => {
-        section.classList.add('hidden');
+            section.classList.add('hidden');
         });
 
-        // Nur die erste Seite anzeigen
-        const moodQuestionSection = document.querySelector('#mood-finish');
-        moodQuestionSection.classList.remove('hidden');
+        // Nur die Abschluss-Seite anzeigen
+        const moodFinishSection = document.getElementById('mood-finish');
+        moodFinishSection.classList.remove('hidden');
+    });
+});
+
+const changeMoodButtons = document.querySelectorAll('.button-changemood');
+
+changeMoodButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Alle Sections ausblenden
+        document.querySelectorAll('.mood-logo').forEach(section => {
+            section.classList.add('hidden');
         });
+
+        document.querySelectorAll('#mood-question').forEach(section => {
+            section.classList.add('hidden');
+        });
+        
+        // Nur die Abschluss-Seite anzeigen
+        const moodFinishSection = document.getElementById('mood-biter');
+        moodFinishSection.classList.remove('hidden');
+    });
+});
+
+const div_silly = document.querySelector('.mood-silly-container');
+
+document.querySelector('.mood-silly-text').innerHTML = dataBrainrot.text;
+
+const silly_button_next = document.querySelector('#mood-silly-button');
+const silly_text = document.querySelector('.mood-silly-text');
+const silly_text2 = document.querySelector('#mood-silly-text-answer');
+const imStupid_button = document.querySelector('#im-stupid');
+const sillyTextAnswer = document.querySelector('#silly-text-answer');
+
+const loadNewFactSilly = () => {
+    fetch('https://official-joke-api.appspot.com/jokes/random/1')
+        .then(response => response.json())
+        .then(data => {
+            silly_text.innerHTML = data[0].setup;
+            silly_text2.innerHTML = data[0].punchline;
+            sillyTextAnswer.classList.add('hidden');
+        })
+        .catch(error => {
+            console.error('Fehler beim Laden des Fun Facts:', error);
+           silly_text.innerHTML = "Oops, konnte keinen neuen Fakt laden.";
+        });
+};
+loadNewFactSilly();
+silly_button_next.addEventListener('click', loadNewFactSilly);
+
+imStupid_button.addEventListener('click', function () {
+    sillyTextAnswer.classList.remove('hidden');
+});
+
