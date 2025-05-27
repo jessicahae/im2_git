@@ -115,6 +115,10 @@ allLogos.forEach(logo => {
             section.classList.add('hidden');
         });
 
+        document.querySelectorAll('#mood-finish').forEach(section => {
+            section.classList.add('hidden');
+        });
+
         // Nur die erste Seite anzeigen
         const moodQuestionSection = document.querySelector('#mood-question');
         moodQuestionSection.classList.remove('hidden');
@@ -129,7 +133,11 @@ const imDoneButton = document.querySelector('.button-imdone');
             section.classList.add('hidden');
         });
 
+        document.querySelectorAll('#mood-question').forEach(section => {
+        section.classList.add('hidden');
+        });
+
         // Nur die erste Seite anzeigen
-        const moodQuestionSection = document.querySelector('#mood-question');
+        const moodQuestionSection = document.querySelector('#mood-finish');
         moodQuestionSection.classList.remove('hidden');
         });
