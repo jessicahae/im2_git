@@ -197,3 +197,21 @@ imStupid_button.addEventListener('click', function () {
     sillyTextAnswer.classList.remove('hidden');
 });
 
+const div_positive = document.querySelector('.mood-positive-container');
+const positive_text = document.querySelector('.mood-positive-text');
+const positive_button_next = document.querySelector('#mood-positive-button');
+
+const loadNewFactPositive = () => {
+    fetch('https://gomezmig03.github.io/MotivationalAPI/en.json')
+        .then(response => response.json())
+        .then(data => {
+            positive_text.innerHTML = data[0].phrase; 
+        })
+        .catch(error => {
+            console.error('Fehler beim Laden des Fun Facts:', error);
+           positive_text.innerHTML = "Oops, konnte keinen neuen Fakt laden.";
+        });
+};
+loadNewFactPositive();
+brainrot_button_next.addEventListener('click', loadNewFactPositive);
+
