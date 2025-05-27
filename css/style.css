@@ -47,14 +47,13 @@
 }
 
 .button-imdone {
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'unbounded', sans-serif;
-    color: #E4B3B6;
-    background-color:#204482;
+    color: #E14D27;
+    background-color: #B2D9BA;
     width: 150px;
     padding:10px;
     box-sizing: border-box;
-    border:1px solid #204482;
     border-radius: 10px;
 }
 
