@@ -318,6 +318,20 @@ img.button-icon {
     width: 100%;
 }
 
+#mood-silly .button-container-leave .button-imdone {
+    color: #9CCDD1;
+    background-color: #E32129;
+    border: 1px solid #E32129;
+}
+
+#mood-silly .button-container-leave .button-changemood {
+    color: #9CCDD1;
+    background-color: #E32129;
+    border: 1px solid #E32129;
+}
+
+
+
 .mood-positive-article {
     position:relative;
     width:100%;
@@ -352,7 +366,7 @@ img.button-icon {
     text-align: center;
 }
 
-.mood-positive-button {
+#mood-positive-button {
     width: 150px;
     height: 60px;
     border-radius: 50%;
@@ -364,3 +378,19 @@ img.button-icon {
     cursor: pointer;
 }
 
+
+#mood-positive .button-container-leave .button-imdone {
+color: #00492E;
+background-color: #FBBA18;
+border: 1px solid #FBBA18;
+}
+
+#mood-positive .button-container-leave .button-changemood {
+    color: #00492E;
+    background-color: #FBBA18;
+    border: 1px solid #FBBA18;
+    }
+
+#mood-positive {
+    background-color: #00492E;
+}
