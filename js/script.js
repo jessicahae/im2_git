@@ -34,7 +34,7 @@ async function loadPositive() {
         return false;
     }
 }
-const dataPositive = await loadBrainrot();
+const dataPositive = await loadPositive();
 console.log(dataPositive); // gibt die Daten der API oder false in der Konsole aus
 
 const button_happy = document.querySelector('#happy');
