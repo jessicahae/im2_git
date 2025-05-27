@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
+h2 {
+    font-family: 'unbounded', sans-serif;
+    color: black;
+    font-family: 'unbounded', sans-serif;
+    font-size: clamp(20px, 3vw, 60px);
+}
 
 #mood-question {
    background-color:#E4B3B6;
@@ -237,8 +241,6 @@ img.button-icon {
 }
 
 .mood-brainrot-text{ 
-    color: black;
-    font-family: 'unbounded', sans-serif;
     font-size: clamp(15px, 3vw, 60px);
     overflow: hidden;
     text-overflow: ellipsis;
@@ -262,19 +264,18 @@ img.button-icon {
 }
 
 .mood-silly-content{
-    position:absolute;
-    top: 50%;
+    position: absolute;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index:1;
-    height:100%;
-    display:flex;
+    z-index: 1;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* Abstand zwischen Box & Button */
+    gap: 30px;
     padding: 0 20px;
-    width:80%;
+    width: 80%;
 }
 
 .mood-silly-text-container{
@@ -285,9 +286,6 @@ img.button-icon {
 }
 
 .mood-silly-text{
-    color: black;
-    font-family: 'unbounded', sans-serif;
-    font-size: clamp(20px, 3vw, 60px);
     overflow: hidden;
     text-overflow: ellipsis;    
 }
