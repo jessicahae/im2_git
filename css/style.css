@@ -196,8 +196,6 @@ img.button-icon {
     position:relative;
     width:100%;
     height:100vh;
-    /* text-align: center; */
-    /* z-index: 0; */
 }
 
 .greenbackground{
@@ -318,5 +316,51 @@ img.button-icon {
     background-color: #204482;
     height: 100vh;
     width: 100%;
+}
+
+.mood-positive-article {
+    position:relative;
+    width:100%;
+    height:100vh;
+}
+
+.mood-positive-text {
+    font-size: clamp(15px, 3vw, 60px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mood-positive-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+    width: 80%;
+}
+
+.mood-positive-text-container {
+    background: white;
+    padding: 10% 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mood-positive-button {
+    width: 150px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #00492E;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
