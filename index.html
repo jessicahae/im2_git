@@ -113,14 +113,29 @@
 
         <section id="mood-finish" class="hidden mood-finish-container">
             <img src="img/Logo_Pink.svg" alt="MoodBite Logo" class="logo">            
-            <h1 class="mood-finish-text">How do you feel now?</h1>
+            <h1 class="mood-biter-text">How do you feel now?</h1>
             <div class="button-container-leave">
-                <button class="button-better-worse">Better</button>
-                <button class="button-better-worse">Worse</button>
+                <button id= "button-mood-better" class="button-mood-biter">Better</button>
+                <button id= "button-mood-worse"class="button-mood-biter">Worse</button>
             </div>
-            <button class="button-dont-feel">I don't feel anything</button>
+            <button id= "button-mood-feel" class="button-mood-biter">I don't feel anything</button>
             <img src="img/pink.svg" alt="Emoji" class="face">
         </section>
+
+        <section id="mood-done" class="hidden mood-done-container">
+            <img src="img/Logo_Pink.svg" alt="MoodBite Logo" class="logo">            
+            <h1 class="mood-biter-text">Mission accomplished!</h1>
+            <img src="img/pink.svg" alt="Emoji" class="face">
+        </section>
+
+         <section id="mood-failed" class="hidden mood-done-container">
+            <img src="img/Logo_Pink.svg" alt="MoodBite Logo" class="logo">      
+            <h1 class="mood-biter-text">Mission failed!</h1>
+            <button id="mood-failed-button" class="button-mood-biter">Bite again</button>
+            <img src="img/Face_Pink_Sad.svg" alt="Emoji" class="face">
+        </section>
+
+
         
     </main>
     <script type="module" src="js/script.js"></script>

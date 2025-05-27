@@ -100,9 +100,9 @@ document.querySelector('.mood-brainrot-text').innerHTML = dataBrainrot.text;
 const brainrot_button_next = document.querySelector('#mood-brainrot-button');
 const brainrot_text = document.querySelector('.mood-brainrot-text');
 
-brainrot_button_next.addEventListener('click', function () {
+// brainrot_button_next.addEventListener('click', function () {
 
-});
+// });
 
 const loadNewFact = () => {
     fetch('https://uselessfacts.jsph.pl/api/v2/facts/random?language=en')
@@ -201,11 +201,12 @@ const div_positive = document.querySelector('.mood-positive-container');
 const positive_text = document.querySelector('.mood-positive-text');
 const positive_button_next = document.querySelector('#mood-positive-button');
 
-const loadNewFactPositive = () => {
+let number = 0;
+function loadNewFactPositive() {
     fetch('https://gomezmig03.github.io/MotivationalAPI/en.json')
         .then(response => response.json())
         .then(data => {
-            positive_text.innerHTML = data[0].phrase; 
+            positive_text.innerHTML = data[number].phrase; 
         })
         .catch(error => {
             console.error('Fehler beim Laden des Fun Facts:', error);
@@ -213,5 +214,42 @@ const loadNewFactPositive = () => {
         });
 };
 loadNewFactPositive();
-brainrot_button_next.addEventListener('click', loadNewFactPositive);
+positive_button_next.addEventListener('click', function (){
+    
+    if (number >= dataPositive.length -1) {
+        number = 0;
+    }
+    else {
+        number = number + 1;
+    }
+    loadNewFactPositive();
+});
+
+const button_better = document.querySelector('#button-mood-better');
+const button_worse = document.querySelector('#button-mood-worse');
+const button_feel = document.querySelector('#button-mood-feel');
+const section_moodFinish = document.querySelector('#mood-finish');
+const section_moodDone = document.querySelector('#mood-done');
+const section_moodFailed = document.querySelector('#mood-failed');
+
+button_better.addEventListener('click', function () {
+    section_moodDone.classList.remove('hidden');
+    section_moodFinish.classList.add('hidden');
+});
+
+[button_worse, button_feel].forEach(button => {
+    button.addEventListener('click', function () {
+        section_moodFailed.classList.remove('hidden');
+        section_moodFinish.classList.add('hidden');
+    });
+});
+
+const button_biteAgain = document.querySelector('#mood-failed-button');
+
+button_biteAgain.addEventListener('click', function () {
+    section_moodFailed.classList.add('hidden');
+    selection_moodbiter.classList.remove('hidden');
+});
+
+
 
