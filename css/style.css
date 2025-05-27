@@ -46,14 +46,34 @@
     border-radius: 10px;
 }
 
-.button-imdone {
-    font-size: 18px;
+.button-container-leave{
+    display: flex;
+    justify-content: center;
+    gap: 15px;        
+    margin-top: 40px; 
+}
+
+.button-container-leave .button-imdone {
+    font-size: 15px;
     font-family: 'unbounded', sans-serif;
     color: #E14D27;
     background-color: #B2D9BA;
     width: 150px;
     padding:10px;
     box-sizing: border-box;
+    border:1px solid #E14D27;
+    border-radius: 10px;
+}
+
+.button-container-leave .button-changemood{
+    font-size: 15px;
+    font-family: 'unbounded', sans-serif;
+    color: #E14D27;
+    background-color: #B2D9BA;
+    width: 150px;
+    padding:10px;
+    box-sizing: border-box;
+    border:1px solid #E14D27;
     border-radius: 10px;
 }
 
@@ -136,7 +156,7 @@ img.button-icon {
 
 
 #mood-brainrot-button {
-    width: 60px;
+    width: 150px;
     height: 60px;
     border-radius: 50%;
     border: 3px solid #E14D27;
@@ -145,19 +165,7 @@ img.button-icon {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    /* position: absolute; */
-    /* bottom: 15px; */
-    /* right: 15px; */
-    /* width: 150px; */
-    /* height: 60px; */
-    /* border-radius: 50%; */
-    /* border: 3px solid #E14D27; */
-    /* background-color: transparent; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* cursor: pointer; */
-    /* z-index: 2;    */
+
 }
 
 .hidden {
@@ -177,7 +185,6 @@ img.button-icon {
 
 #mood-brainrot{
     background-color:#E14D27;
-    height: 100vh;
     width: 100%;
 }
 
@@ -194,18 +201,17 @@ img.button-icon {
     height:auto;
     /* display:block; */
     position:absolute;
-    top:90px;
+    top:40px;
     left:0;
     z-index:0;
  }
 
  .mood-brainrot-content{
     position:absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index:1;
-    height:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -234,7 +240,7 @@ img.button-icon {
 .mood-brainrot-text{ 
     color: black;
     font-family: 'unbounded', sans-serif;
-    font-size: clamp(20px, 3vw, 60px);
+    font-size: clamp(15px, 3vw, 60px);
     overflow: hidden;
     text-overflow: ellipsis;
 }
