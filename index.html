@@ -8,36 +8,38 @@
     <title>MoodBite</title>
 </head>
 <body>
-    <header>
-    </header>
     <main>
         <section id="mood-question" class="mood-container">
-                <img src="img/Logo_Blue.svg" alt="MoodBite Logo" class="logo">            
+            <img src="img/Logo_Blue.svg" alt="MoodBite Logo" class="logo">    
             <h1 class="mood-question-text">What's your mood like today?</h1>
+
             <div class="button-container-mood">
                 <button id="happy" class="button-mood-question">Happy</button>
                 <button id="sad" class="button-mood-question">Sad</button>
             </div>
+
             <div class="button-container-mood">
                 <button id="anxious" class="button-mood-question">Anxious</button>
                 <button id="bored" class="button-mood-question">Bored</button>
             </div>
-            <div class="next">
-                <button id="next-mood-biter" class="hidden">
-                  <img src="img/Arrow.svg" alt="Pfeil" class="button-icon">
 
+            <div class="next-button-container">
+                <button id="next-mood-question" class="hidden">
+                    <img src="img/Arrow.svg" alt="Pfeil" class="button-icon">
                 </button>
-              </div>
+            </div>
             <img src="img/Asset 1.svg" alt="Emoji" class="face">
         </section>
 
         <section id= "mood-biter" class="hidden mood-container mood-logo">            
             <img src="img/Logo_Pink.svg" alt="MoodBite Logo" class="logo">            
             <h1 class="mood-biter-text">What mood would you like to bite into?</h1>
+
             <div class="button-container-mood_choice">
                 <button id="silly" class="button-mood-biter">Silly</button>
                 <button id="positive" class="button-mood-biter">Positive</button>
             </div>
+
             <div class="button-container-mood_choice">
                 <button id="brainrot" class="button-mood-biter">Brainrot</button>
             </div>
@@ -45,28 +47,29 @@
         </section>
 
         <section id="mood-silly" class="hidden mood-container mood-logo">    
-            <img src="img/Logo_Red.svg" alt="MoodBite Logo" class="logo"> 
+            <img src="img/Logo_Red.svg" alt="MoodBite Logo" class="logo">
+
             <div class="button-container-leave">       
-            <button class="button-imdone">I'm done!</button>
-            <button class="button-changemood">Change mood</button>
+                <button class="button-imdone">I'm done!</button>
+                <button class="button-changemood">Change mood</button>
             </div>
+
             <article class= "mood-article">
                 <img src="img/Background_Red.svg" alt="Brainrot" class="greenbackground">
                 <div class="mood-silly-content">
-                <div class="mood-silly-text-container"> 
-                    <h2 class="mood-silly-text">Silly</h2>
-                </div>
+                    <div class="mood-silly-text-container"> 
+                        <h2 class="mood-silly-text">Silly</h2>
+                    </div>
 
-                <button id="im-stupid" class="button-im-stupid">I'm stupid!</button>
-                
+                    <button id="im-stupid" class="button-im-stupid">I'm stupid!</button>
 
-                <div id= "silly-text-answer" class="hidden mood-silly-text-container"> 
-                    <h2 class="mood-silly-text-answer" id="mood-silly-text-answer">Silly</h2>
-                </div>
+                    <div id= "silly-text-answer" class="hidden mood-silly-text-container"> 
+                        <h2 class="mood-silly-text-answer" id="mood-silly-text-answer">Silly</h2>
+                    </div>
 
-                <button id="mood-silly-button">
-                    <img src="img/Arrow_blue.svg" alt="Pfeil" class="button-icon">
-                </button>
+                    <button id="mood-silly-button">
+                        <img src="img/Arrow_blue.svg" alt="Pfeil" class="button-icon">
+                    </button>
                 </div>
             </article>
         </section>
@@ -74,8 +77,8 @@
         <section id= "mood-brainrot" class="hidden mood-container mood-logo">            
             <img src="img/Logo_Green.svg" alt="MoodBite Logo" class="logo">
             <div class="button-container-leave">      
-            <button class="button-imdone">I'm done!</button>
-            <button class="button-changemood">Change mood</button>
+                <button class="button-imdone">I'm done!</button>
+                <button class="button-changemood">Change mood</button>
             </div>   
             <article class="mood-article">
                 <img src="img/Background_Green.svg" alt="Brainrot" class="greenbackground">
@@ -95,18 +98,19 @@
         <section id= "mood-positive" class="hidden mood-container mood-logo">            
             <img src="img/Logo_Yellow.svg" alt="MoodBite Logo" class="logo">
             <div class="button-container-leave">
-            <button class="button-imdone">I'm done!</button>
-            <button class="button-changemood">Change mood</button>
+                <button class="button-imdone">I'm done!</button>
+                <button class="button-changemood">Change mood</button>
             </div>
             <article class= "mood-article">
                 <img src="img/Background_Yellow.svg" alt="Brainrot" class="greenbackground">
                 <div class="mood-positive-content"> 
-                <div class="mood-positive-text-container"> 
-                    <h2 class="mood-positive-text">Positive</h2>
-                </div>
-                <button id="mood-positive-button">
-                    <img src="img/Arrow_green.svg" alt="Pfeil" class="button-icon">
-                </button>
+                    <div class="mood-positive-text-container"> 
+                        <h2 class="mood-positive-text">Positive</h2>
+                    </div>
+
+                    <button id="mood-positive-button">
+                        <img src="img/Arrow_green.svg" alt="Pfeil" class="button-icon">
+                    </button>
                 </div>
             </article>
         </section>
@@ -114,13 +118,16 @@
         <section id="mood-finish" class="hidden mood-container">
             <img src="img/Logo_Pink.svg" alt="MoodBite Logo" class="logo">            
             <h1 class="mood-biter-text">How do you feel now?</h1>
+
             <div class="button-container-leave">
                 <button id= "button-mood-better" class="button-mood-biter">Better</button>
                 <button id= "button-mood-worse"class="button-mood-biter">Worse</button>
             </div>
+
             <div class="button-container-mood-finish">
                 <button id= "button-mood-feel" class="button-mood-finish">I don't feel anything</button>
             </div>
+
             <img src="img/pink.svg" alt="Emoji" class="face">
         </section>
 
@@ -138,8 +145,8 @@
             </div>
 
             <img src="img/Face_Pink_Sad (2).svg" alt="Emoji" class="face">
-
         </section>
+
     </main>
     <script type="module" src="js/script.js"></script>
 </body>

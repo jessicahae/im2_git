@@ -9,6 +9,8 @@ html, body {
     width: 100%;
 }
 
+/* General adjustments */
+
 h2 {
     font-family: 'unbounded', sans-serif;
     color: black;
@@ -16,80 +18,14 @@ h2 {
     font-size: clamp(20px, 3vw, 60px);
 }
 
-#mood-question {
-   background-color:#E4B3B6;
-   height: 100vh;
-   width: 100%;
-   position: relative;       /* wichtig für absolute Positionierung der Bilder */
-    overflow: hidden;         /* verhindert Overflow */
-    height: 100vh;            /* volle Höhe Viewport */
-    width: 100%;
-}
-
-.mood-question-text{ 
-    color: #204482;
-    font-size: 40px;
-    font-family: 'unbounded', sans-serif;
-    display: flex;
-    justify-content: center;
-    text-align:center;
-    margin-top: 40px;
-}
-
-.button-container-mood{
-    display: flex;
-    justify-content: center;
-    gap: 15px;        
-    margin: 30px; 
-}
-    
-
-.button-mood-question{
-    font-size: 22px;
-    font-family: 'unbounded', sans-serif;
-    color: #E4B3B6;
-    background-color:#204482;
-    width: 150px;
-    padding:10px;
-    box-sizing: border-box;
-    border:1px solid #204482;
-    border-radius: 10px;
-}
-
-.button-container-leave{
-    display: flex;
-    justify-content: center;
-    gap: 15px;        
-    margin-top: 40px; 
-}
-
-.button-container-leave .button-imdone {
-    font-size: 15px;
-    font-family: 'unbounded', sans-serif;
-    color: #E14D27;
-    background-color: #B2D9BA;
-    width: 150px;
-    padding:10px;
-    box-sizing: border-box;
-    border:1px solid #E14D27;
-    border-radius: 10px;
-}
-
-.button-container-leave .button-changemood{
-    font-size: 15px;
-    font-family: 'unbounded', sans-serif;
-    color: #E14D27;
-    background-color: #B2D9BA;
-    width: 150px;
-    padding:10px;
-    box-sizing: border-box;
-    border:1px solid #E14D27;
-    border-radius: 10px;
+.hidden {
+    display: none;
 }
 
 .mood-container{
     position:relative;
 }
+
 .face {
     position: absolute;
     bottom: -20%;        /* Bild weiter nach unten */
@@ -106,144 +42,11 @@ h2 {
     object-fit: contain;
 }
 
-.next {
-    display: flex;
-    justify-content: center;
-    gap: 15px;        
-    margin: 30px; 
-}
-
-.next_card {
-    display: flex;
-    justify-content: center;
-    gap: 15px;        
-    margin: 30px; 
-}
-
-#next-mood-biter {
-    width: 150px;
-    height: 60px;
-    border-radius: 50%;
-    border: 3px solid #204482;  
-    background-color: transparent;
-
-}
-
-img.button-icon {
-    width:40px;
-    height:40px;
-}
-
-.button-container-mood_choice {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;        
-    margin: 30px; 
-}
-
-.button-mood-biter {
-    font-size: 22px;
-    font-family: 'unbounded', sans-serif;
-    color: #204482;
-    background-color:#E4B3B6; 
-    width: 150px;
-    padding:10px;
-    box-sizing: border-box;
-    border:1px solid #204482;
-    border-radius: 10px;
-}
-
-.mood-biter-text {
-    color: #E4B3B6;
-    font-size: 40px;
-    font-family: 'unbounded', sans-serif;
-    display: flex;
-    justify-content: center;
-    text-align:center;
-    margin-top: 40px;
-}
-
-
-#mood-brainrot-button {
-    width: 150px;
-    height: 60px;
-    border-radius: 50%;
-    border: 3px solid #E14D27;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
-}
-
-.hidden {
-    display: none;
-}
-
-#mood-biter {
-    background-color:#204482;
-    height: 100vh;
-    width: 100%;
- }
-
-.mood-biter-text{ 
-    color: #E4B3B6;
-    font-family: 'unbounded', sans-serif;
-}
-
-#mood-brainrot{
-    background-color:#E14D27;
-    width: 100%;
-}
-
 .greenbackground{
     width:100%;
-    height:auto;
     position:absolute;
     top:40px;
-    left:0;
-    z-index:0;
  }
-
- .mood-brainrot-content{
-    position:absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index:1;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px; /* Abstand zwischen Box & Button */
-    padding: 0 20px;
-    width:80%;
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* background-color: white; */
-    /* padding: 10%; */
-    /* width: 70%; */
-    /* max-height: 50%; */
-    /* border-radius: 10px; */
-}
-
-.mood-brainrot-text-container{
-    background: white;
-    padding: 10% 5%;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.mood-brainrot-text{ 
-    font-size: clamp(15px, 3vw, 60px);
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 
 .logo{
     position: relative;
@@ -251,71 +54,10 @@ img.button-icon {
     top: 10px;
 } 
 
-#mood-silly{
-    background-color:#9CCDD1;
-}
-
 .mood-article{
     position:relative;
     width:100%;
     height:100vh;
-}
-
-.mood-silly-content{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 0 20px;
-    width: 80%;
-}
-
-.mood-silly-text-container{
-    background: white;
-    padding: 10% 5%;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.mood-silly-text{
-    overflow: hidden;
-    text-overflow: ellipsis;    
-}
-
-#mood-silly-button {
-    width: 150px;
-    height: 60px;
-    border-radius: 50%;
-    border: 3px solid #9CCDD1;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-#im-stupid{
-    font-size: 18px;
-    font-family: 'unbounded', sans-serif;
-    color: #E32129;
-    background-color:#9CCDD1;
-    width: 150px;
-    padding:5px;
-    box-sizing: border-box;
-    border:1px solid #9CCDD1;
-    border-radius: 10px;
-}
-
-#mood-finish{
-    background-color: #204482;
-    height: 100vh;
-    width: 100%;
 }
 
 #mood-silly .button-container-leave .button-imdone {
@@ -330,10 +72,240 @@ img.button-icon {
     border: 1px solid #E32129;
 }
 
-.mood-positive-text {
+#mood-positive .button-container-leave .button-imdone {
+color: #00492E;
+background-color: #FBBA18;
+border: 4px solid #FBBA18;
+}
+
+#mood-positive .button-container-leave .button-changemood {
+    color: #00492E;
+    background-color: #FBBA18;
+    border: 1px solid #FBBA18;
+    }
+
+.button-container-leave{
+    display: flex;
+    justify-content: center;
+    gap: 15px;        
+    margin-top: 40px; 
+}
+
+.button-container-leave .button-imdone {
+    font-size: 15px;
+    font-family: 'unbounded', sans-serif;
+    color: #E14D27;
+    background-color: #B2D9BA;
+    width: 150px;
+    padding:10px;
+    border:4px solid #E14D27;
+    border-radius: 10px;
+}
+
+.button-container-leave .button-changemood{
+    font-size: 15px;
+    font-family: 'unbounded', sans-serif;
+    color: #E14D27;
+    background-color: #B2D9BA;
+    width: 150px;
+    padding:10px;
+    border:4px solid #E14D27;
+    border-radius: 10px;
+}
+
+/* Starter page mood question */
+
+#mood-question {
+    background-color:#E4B3B6;     
+    overflow: hidden;         
+    height: 100vh;           
+}
+
+.mood-question-text{ 
+    color: #204482;
+    font-size: 40px;
+    font-family: 'unbounded', sans-serif;
+    text-align:center;
+    margin-top: 40px;
+}
+
+.button-container-mood{
+    display: flex;
+    justify-content: center;
+    gap: 15px;        
+    margin: 30px; 
+}
+
+.button-mood-question{
+    font-size: 22px;
+    font-family: 'unbounded', sans-serif;
+    color: #E4B3B6;
+    background-color:#204482;
+    width: 150px;
+    padding:10px;
+    border:4px solid #204482;
+    border-radius: 10px;
+}
+
+.button-mood-question:hover {
+    background-color: #E4B3B6;
+    color:#204482;
+}
+
+.next-button-container {
+    display: flex;
+    justify-content: center;  
+}
+
+#next-mood-question{
+    width: 130px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid #204482;  
+    background-color: transparent;
+}
+
+img.button-icon {
+    width:40px;
+    height:40px;
+}
+
+/* Page What mood would you like to bite into? */
+
+#mood-biter {
+    background-color:#204482;
+    height: 100vh;
+    overflow:hidden;
+ }
+
+.mood-biter-text {
+    color: #E4B3B6;
+    font-family: 'unbounded', sans-serif;
+    font-size: 40px;
+    text-align:center;
+    margin-top: 40px;
+}
+
+.button-container-mood_choice {
+    display: flex;
+    justify-content: center;
+    gap: 15px;        
+    margin: 30px; 
+}
+
+.button-mood-biter {
+    font-size: 22px;
+    font-family: 'unbounded', sans-serif;
+    color: #204482;
+    background-color:#E4B3B6; 
+    width: 150px;
+    padding:10px;
+    box-sizing: border-box;
+    border:4px solid #204482;
+    border-radius: 10px;
+}
+
+/* Silly Page */
+
+#mood-silly{
+    background-color:#9CCDD1;
+    height: 100vh;
+    overflow:hidden;
+}
+
+.mood-silly-content{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+    width: 80%;
+}
+
+.mood-silly-text-container{
+    background: white;
+    padding: 10% 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#mood-silly-button {
+    width: 130px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid #9CCDD1;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Brainrot Page */
+
+#mood-brainrot{
+    background-color:#E14D27;
+    height: 100vh;
+    overflow:hidden;
+}
+
+.mood-brainrot-content{
+   position:absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+   padding: 0 20px;
+   width:80%;
+}
+
+.mood-brainrot-text-container{
+    background: white;
+    padding: 10% 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mood-brainrot-text{ 
     font-size: clamp(15px, 3vw, 60px);
-    overflow: hidden;
-    text-overflow: ellipsis;
+}
+
+#mood-brainrot-button {
+    width: 130px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid #E14D27;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#im-stupid{
+    font-size: 18px;
+    font-family: 'unbounded', sans-serif;
+    color: #E32129;
+    background-color:#9CCDD1;
+    width: 150px;
+    padding:5px;
+    border:4px solid #9CCDD1;
+    border-radius: 10px;
+}
+
+/* Positive Page */
+
+#mood-positive {
+    background-color: #00492E;
+    height: 100vh;
+    overflow:hidden;
 }
 
 .mood-positive-content {
@@ -341,10 +313,8 @@ img.button-icon {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 30px;
     padding: 0 20px;
@@ -359,10 +329,10 @@ img.button-icon {
 }
 
 #mood-positive-button {
-    width: 150px;
+    width: 130px;
     height: 60px;
     border-radius: 50%;
-    border: 3px solid #00492E;
+    border: 4px solid #00492E;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -370,40 +340,15 @@ img.button-icon {
     cursor: pointer;
 }
 
+/* Finisher Page */
 
-#mood-positive .button-container-leave .button-imdone {
-color: #00492E;
-background-color: #FBBA18;
-border: 1px solid #FBBA18;
-}
-
-#mood-positive .button-container-leave .button-changemood {
-    color: #00492E;
-    background-color: #FBBA18;
-    border: 1px solid #FBBA18;
-    }
-
-#mood-positive {
-    background-color: #00492E;
-}
-
-.button-mood-failed{
-    font-size: 22px;
-    font-family: 'unbounded', sans-serif;
-    color: #204482;
-    background-color:#E4B3B6; 
-    width: 200px;
-    padding:10px;
-    box-sizing: border-box;
-    border:1px solid #204482;
-    border-radius: 10px;
-    display:flex;
-    justify-content: center;
-    align-items:center;
+#mood-finish{
+    background-color: #204482;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .button-container-mood-finish{
-    display: flex;
     justify-content: center;
     text-align:center;
     gap: 15px;
@@ -417,36 +362,41 @@ border: 1px solid #FBBA18;
     background-color:#E4B3B6; 
     width: 300px;
     padding:10px;
-    box-sizing: border-box;
-    border:1px solid #204482;
+    border:4px solid #204482;
     border-radius: 10px;
 }
 
-#mood-done{
-    background-color:#204482;
-    height: 100vh;
-    width: 100%;
-    position: relative;       /* wichtig für absolute Positionierung der Bilder */
-    overflow: hidden;         /* verhindert Overflow */
-    height: 100vh;            /* volle Höhe Viewport */
-    width: 100%;
-}
+/* Page feel worse */
 
 #mood-failed{
     background-color:#204482;
     height: 100vh;
-    width: 100%;
-    position: relative;       /* wichtig für absolute Positionierung der Bilder */
-    overflow: hidden;         /* verhindert Overflow */
-    height: 100vh;            /* volle Höhe Viewport */
-    width: 100%;
+    overflow: hidden;        
+}
+
+.button-mood-failed{
+    font-size: 22px;
+    font-family: 'unbounded', sans-serif;
+    color: #204482;
+    background-color:#E4B3B6; 
+    width: 200px;
+    padding:10px;
+    border:4px solid #204482;
+    border-radius: 10px;
+}
+
+/* Feel better Page */
+
+#mood-done{
+    background-color:#204482;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .mood-done-text{
     color: #E4B3B6;
     font-size: 40px;
     font-family: 'unbounded', sans-serif;
-    display: flex;
     justify-content: center;
     text-align:center;
     margin-top: 150px;
