@@ -81,7 +81,7 @@ h2 {
     border-radius: 10px;
 }
 
-.mood-question-container{
+.mood-container{
     position:relative;
 }
 .face {
@@ -192,12 +192,6 @@ img.button-icon {
     width: 100%;
 }
 
-.mood-brainrot-article{
-    position:relative;
-    width:100%;
-    height:100vh;
-}
-
 .greenbackground{
     width:100%;
     height:auto;
@@ -255,7 +249,7 @@ img.button-icon {
     background-color:#9CCDD1;
 }
 
-.mood-silly-article{
+.mood-article{
     position:relative;
     width:100%;
     height:100vh;
@@ -330,14 +324,6 @@ img.button-icon {
     border: 1px solid #E32129;
 }
 
-
-
-.mood-positive-article {
-    position:relative;
-    width:100%;
-    height:100vh;
-}
-
 .mood-positive-text {
     font-size: clamp(15px, 3vw, 60px);
     overflow: hidden;
@@ -393,4 +379,19 @@ border: 1px solid #FBBA18;
 
 #mood-positive {
     background-color: #00492E;
+}
+
+.button-mood-failed{
+    font-size: 22px;
+    font-family: 'unbounded', sans-serif;
+    color: #204482;
+    background-color:#E4B3B6; 
+    width: 150px;
+    padding:10px;
+    box-sizing: border-box;
+    border:1px solid #204482;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
