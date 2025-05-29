@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 h2 {
     font-family: 'unbounded', sans-serif;
     color: black;
@@ -116,10 +122,10 @@ h2 {
 
 #next-mood-biter {
     width: 150px;
-  height: 60px;
-  border-radius: 50%;
-  border: 3px solid #204482;  
-  background-color: transparent;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #204482;  
+    background-color: transparent;
 
 }
 
@@ -283,7 +289,7 @@ img.button-icon {
 }
 
 #mood-silly-button {
-    width: 60px;
+    width: 150px;
     height: 60px;
     border-radius: 50%;
     border: 3px solid #9CCDD1;
@@ -386,7 +392,7 @@ border: 1px solid #FBBA18;
     font-family: 'unbounded', sans-serif;
     color: #204482;
     background-color:#E4B3B6; 
-    width: 150px;
+    width: 200px;
     padding:10px;
     box-sizing: border-box;
     border:1px solid #204482;
@@ -394,4 +400,54 @@ border: 1px solid #FBBA18;
     display:flex;
     justify-content: center;
     align-items:center;
+}
+
+.button-container-mood-finish{
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    gap: 15px;
+    margin: 15px;
+}
+
+.button-mood-finish{
+    font-size: 22px;
+    font-family: 'unbounded', sans-serif;
+    color: #204482;
+    background-color:#E4B3B6; 
+    width: 300px;
+    padding:10px;
+    box-sizing: border-box;
+    border:1px solid #204482;
+    border-radius: 10px;
+}
+
+#mood-done{
+    background-color:#204482;
+    height: 100vh;
+    width: 100%;
+    position: relative;       /* wichtig für absolute Positionierung der Bilder */
+    overflow: hidden;         /* verhindert Overflow */
+    height: 100vh;            /* volle Höhe Viewport */
+    width: 100%;
+}
+
+#mood-failed{
+    background-color:#204482;
+    height: 100vh;
+    width: 100%;
+    position: relative;       /* wichtig für absolute Positionierung der Bilder */
+    overflow: hidden;         /* verhindert Overflow */
+    height: 100vh;            /* volle Höhe Viewport */
+    width: 100%;
+}
+
+.mood-done-text{
+    color: #E4B3B6;
+    font-size: 40px;
+    font-family: 'unbounded', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    margin-top: 150px;
 }
