@@ -583,7 +583,7 @@ img.button-icon {
     }
 
     .greenbackground_big {
-    display: block; /* Sichtbar machen */
+    display: block; 
     position: absolute;
     top: 50%;
     left: 50%;
